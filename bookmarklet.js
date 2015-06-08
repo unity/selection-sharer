@@ -1,0 +1,5 @@
+!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):"object"==typeof exports?exports["selection-sharer"]=t():e["selection-sharer"]=t()}(this,function(){return function(e){function t(n){if(o[n])return o[n].exports;var r=o[n]={exports:{},id:n,loaded:!1};return e[n].call(r.exports,r,r.exports,t),r.loaded=!0,r.exports}var o={};return t.m=e,t.c=o,t.p="/",t(0)}([/*!****************************!*\
+  !*** ./src/bookmarklet.js ***!
+  \****************************/
+function(e,t,o){/* @author: Xavier Damman (@xdamman) - http://github.com/xdamman/selection-sharer - @license: MIT */
+"use strict";!function(){var e="//unity.github.io/selection-sharer/dist",t=function(){var t=document.createElement("script");t.src=e+"/selection-sharer.js",t.onload=o,document.body.appendChild(t)},o=function(){var e=new SelectionSharer;e.show(),e.setElements("p")};if("function"!=typeof jQuery){var n=document.createElement("script");n.src="http://code.jquery.com/jquery-latest.js",n.onload=t,document.body.appendChild(n)}else t()}()}])});
