@@ -2,7 +2,7 @@
   "name": "selection-sharer",
   "version": "0.0.16",
   "description": "Medium like popover menu to share on Twitter or by email any text selected on the page",
-  "main": "src/selection-sharer.js",
+  "main": "dist/selection-sharer.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/unity/selection-sharer.git"
