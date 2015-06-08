@@ -1,14 +1,14 @@
 {
-  "name": "share-selection",
-  "version": "0.0.15",
+  "name": "selection-sharer",
+  "version": "0.0.16",
   "description": "Medium like popover menu to share on Twitter or by email any text selected on the page",
-  "main": "src/share-selection.js",
+  "main": "src/selection-sharer.js",
   "scripts": {
     "install": "node_modules/grunt-cli/bin/grunt"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/xdamman/share-selection.git"
+    "url": "git://github.com/unity/selection-sharer.git"
   },
   "keywords": [
     "share",
@@ -24,9 +24,9 @@
   "author": "Xavier Damman (@xdamman)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xdamman/share-selection/issues"
+    "url": "https://github.com/unity/selection-sharer/issues"
   },
-  "homepage": "https://github.com/xdamman/share-selection",
+  "homepage": "https://github.com/unity/selection-sharer",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-uglify": "~0.2.7",
