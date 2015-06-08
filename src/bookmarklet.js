@@ -1,12 +1,6 @@
+/* @author: Xavier Damman (@xdamman) - http://github.com/xdamman/selection-sharer - @license: MIT */
 (function() {
-
-	var baseUrl = '//xdamman.github.com/selection-sharer/lib/selection-sharer/dist';
-
-	// Loading CSS
-	var l = document.createElement('link');
-	l.rel = 'stylesheet';
-	l.href = baseUrl+"/selection-sharer.css";
-	document.head.appendChild(l);
+	var baseUrl = '//unity.github.io/selection-sharer/dist';
 
 	var loadSelectionSharer = function() {
 		var s = document.createElement('script');
@@ -26,8 +20,7 @@
 		s.src="http://code.jquery.com/jquery-latest.js";
 		s.onload = loadSelectionSharer;
 		document.body.appendChild(s);
-	}
-	else {
+	} else {
 		loadSelectionSharer();
 	}
 

@@ -4,14 +4,20 @@
  * -- Requires jQuery --
  * -- AMD compatible  --
  *
- * Author: Xavier Damman (@xdamman)
- * GIT: https://github.com/xdamman/share-selection
+ * Author: Xavier Damman (@xdamman) with edits from Romain Dardour (@unity)
+ * GIT: https://github.com/unity/share-selection
  * MIT License
  */
+
+import style        from './selection-sharer.css'
+import popoverHTML  from 'raw!./popover.html'
+import popunderHTML from 'raw!./popunder.html'
 
 (function($) {
 
   var SelectionSharer = function(options) {
+
+    style.use();
 
     var self = this;
 
@@ -256,27 +262,6 @@
     };
 
     this.render = function() {
-      var popoverHTML =  '<div class="selectionSharer" id="selectionSharerPopover" style="position:absolute;">'
-                       + '  <div id="selectionSharerPopover-inner">'
-                       + '    <ul>'
-                       + '      <li><a class="action tweet" href="" title="Share this selection on Twitter" target="_blank">Tweet</a></li>'
-                       + '      <li><a class="action facebook" href="" title="Share this selection on Facebook" target="_blank">Facebook</a></li>'
-                       + '      <li><a class="action email" href="" title="Share this selection by email" target="_blank"><svg width="20" height="20"><path stroke="#FFF" stroke-width="6" d="m16,25h82v60H16zl37,37q4,3 8,0l37-37M16,85l30-30m22,0 30,30"/></svg></a></li>'
-                       + '    </ul>'
-                       + '  </div>'
-                       + '  <div class="selectionSharerPopover-clip"><span class="selectionSharerPopover-arrow"></span></div>'
-                       + '</div>';
-
-      var popunderHTML = '<div id="selectionSharerPopunder" class="selectionSharer">'
-                       + '  <div id="selectionSharerPopunder-inner">'
-                       + '    <label>Share this selection</label>'
-                       + '    <ul>'
-                       + '      <li><a class="action tweet" href="" title="Share this selection on Twitter" target="_blank">Tweet</a></li>'
-                       + '      <li><a class="action facebook" href="" title="Share this selection on Facebook" target="_blank">Facebook</a></li>'
-                       + '      <li><a class="action email" href="" title="Share this selection by email" target="_blank"><svg width="20" height="20"><path stroke="#FFF" stroke-width="6" d="m16,25h82v60H16zl37,37q4,3 8,0l37-37M16,85l30-30m22,0 30,30"/></svg></a></li>'
-                       + '    </ul>'
-                       + '  </div>'
-                       + '</div>';
       self.$popover = $(popoverHTML);
       self.$popover.find('a.tweet').click(self.shareTwitter);
       self.$popover.find('a.facebook').click(self.shareFacebook);
